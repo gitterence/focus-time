@@ -14,4 +14,4 @@ Run `npm run format` to format code with prettier
 
 # Deployment
 
-
+Run `npm run deploy` to deploy the application
