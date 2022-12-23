@@ -1,6 +1,6 @@
 {
   "name": "pomodoro-timer",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://gitterence.github.io/pomodoro-timer",
   "private": true,
   "dependencies": {
@@ -12,6 +12,7 @@
     "react-dom": "^18.2.0",
     "react-scripts": "^5.0.1",
     "react-slider": "^2.0.4",
+    "use-sound": "^4.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

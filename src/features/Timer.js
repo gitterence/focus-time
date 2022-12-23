@@ -6,12 +6,15 @@ import PlayButton from '../component/PlayButton';
 import SettingButton from '../component/SettingButton';
 import SettingsContext from '../component/SettingsContext';
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
+import useSound from 'use-sound';
+import dingSfx from '../media/sound/ding-sound.mp3';
 
 function Timer() {
   const settingInfo = useContext(SettingsContext);
   const [mode, setMode] = useState('work');
   const [isPaused, setIsPaused] = useState(true);
   const [secondsLeft, setSecondsLeft] = useState(0);
+  const [play, { stop }] = useSound(dingSfx);
 
   const modeRef = useRef(mode);
   const isPausedRef = useRef(isPaused);
@@ -37,6 +40,8 @@ function Timer() {
         return;
       }
       if (secondsLeftRef.current === 0) {
+        play();
+
         return switchMode();
       }
 
@@ -44,7 +49,7 @@ function Timer() {
     }, 1000);
 
     return () => clearInterval(interval);
-  }, [settingInfo]);
+  }, [play, settingInfo]);
 
   function countDown() {
     secondsLeftRef.current = secondsLeftRef.current - 1;
