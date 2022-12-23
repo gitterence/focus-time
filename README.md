@@ -2,7 +2,7 @@
 
 A timer that helps you to focus on task using pomodoro method
 
-(code along project credit goes to dejwid: https://github.com/dejwid/react-pomodoro-timer)
+[Timer Demo](https://gitterence.github.io/pomodoro-timer/)
 
 # Development
 
@@ -15,3 +15,7 @@ Run `npm run format` to format code with prettier
 # Deployment
 
 Run `npm run deploy` to deploy the application
+
+# Reference 
+
+(code along project credit goes to dejwid: https://github.com/dejwid/react-pomodoro-timer)
