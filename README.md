@@ -20,4 +20,4 @@ Run `npm run deploy` to deploy the application
 
 # Reference
 
-(code along project credit goes to dejwid: https://github.com/dejwid/react-pomodoro-timer)
+(code along project credit goes to [dejwid](https://github.com/dejwid/react-pomodoro-timer))
