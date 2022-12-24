@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/focus-time/static/css/main.3a7026f0.css",
+    "main.css": "/focus-time/static/css/main.c4f6217a.css",
     "main.js": "/focus-time/static/js/main.94f3358c.js",
     "static/js/845.cb085d77.chunk.js": "/focus-time/static/js/845.cb085d77.chunk.js",
     "static/js/496.47b79c06.chunk.js": "/focus-time/static/js/496.47b79c06.chunk.js",
     "static/media/ding-sound.mp3": "/focus-time/static/media/ding-sound.8ec4c93ed7377085b497.mp3",
     "index.html": "/focus-time/index.html",
-    "main.3a7026f0.css.map": "/focus-time/static/css/main.3a7026f0.css.map",
+    "main.c4f6217a.css.map": "/focus-time/static/css/main.c4f6217a.css.map",
     "main.94f3358c.js.map": "/focus-time/static/js/main.94f3358c.js.map",
     "845.cb085d77.chunk.js.map": "/focus-time/static/js/845.cb085d77.chunk.js.map",
     "496.47b79c06.chunk.js.map": "/focus-time/static/js/496.47b79c06.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3a7026f0.css",
+    "static/css/main.c4f6217a.css",
     "static/js/main.94f3358c.js"
   ]
 }
