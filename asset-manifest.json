@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/focus-timer/static/css/main.6cda051a.css",
-    "main.js": "/focus-timer/static/js/main.5ae0a375.js",
-    "static/js/845.b41431b2.chunk.js": "/focus-timer/static/js/845.b41431b2.chunk.js",
-    "static/js/496.bb1ca6ba.chunk.js": "/focus-timer/static/js/496.bb1ca6ba.chunk.js",
-    "static/media/ding-sound.mp3": "/focus-timer/static/media/ding-sound.8ec4c93ed7377085b497.mp3",
-    "index.html": "/focus-timer/index.html",
-    "main.6cda051a.css.map": "/focus-timer/static/css/main.6cda051a.css.map",
-    "main.5ae0a375.js.map": "/focus-timer/static/js/main.5ae0a375.js.map",
-    "845.b41431b2.chunk.js.map": "/focus-timer/static/js/845.b41431b2.chunk.js.map",
-    "496.bb1ca6ba.chunk.js.map": "/focus-timer/static/js/496.bb1ca6ba.chunk.js.map"
+    "main.css": "/focus-time/static/css/main.6cda051a.css",
+    "main.js": "/focus-time/static/js/main.94f3358c.js",
+    "static/js/845.cb085d77.chunk.js": "/focus-time/static/js/845.cb085d77.chunk.js",
+    "static/js/496.47b79c06.chunk.js": "/focus-time/static/js/496.47b79c06.chunk.js",
+    "static/media/ding-sound.mp3": "/focus-time/static/media/ding-sound.8ec4c93ed7377085b497.mp3",
+    "index.html": "/focus-time/index.html",
+    "main.6cda051a.css.map": "/focus-time/static/css/main.6cda051a.css.map",
+    "main.94f3358c.js.map": "/focus-time/static/js/main.94f3358c.js.map",
+    "845.cb085d77.chunk.js.map": "/focus-time/static/js/845.cb085d77.chunk.js.map",
+    "496.47b79c06.chunk.js.map": "/focus-time/static/js/496.47b79c06.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6cda051a.css",
-    "static/js/main.5ae0a375.js"
+    "static/js/main.94f3358c.js"
   ]
 }
