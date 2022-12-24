@@ -1,8 +1,10 @@
-# Pomodoro-Timer
+# Focus-Timer
 
 A timer that helps you to focus on task using pomodoro method
 
 [Timer Demo](https://gitterence.github.io/pomodoro-timer/)
+
+![Screenshot](/src/media/images/timer_screenshot.png)
 
 # Development
 

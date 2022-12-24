@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: #30384b;
+  background-color: #201e1e;
   color: #eee;
 }
 
@@ -24,6 +24,21 @@ button {
   cursor: pointer;
 }
 
+button.with-icon {
+  background-color: transparent;
+  color:  rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  width: 100px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+button.with-icon:hover {
+  color:  rgba(255, 255, 255, 0.8);
+  box-shadow: 0 1px 25px 0 rgba(255, 255, 255, 0.8) inset, 0 1px 25px 0 rgba(255, 255, 255, 0.8),
+              0 1px 25px 0 rgba(255, 255, 255, 0.8) inset, 0 1px 25px 0 rgba(255, 255, 255, 0.8);  
+}
+
 button.with-text {
   width: auto;
   background-color: rgba(255, 255, 255, 0.1);
@@ -31,6 +46,12 @@ button.with-text {
   padding: 10px 20px;
   font-size: 1.4rem;
   line-height: 36px;
+  transition: 1s;
+}
+
+button.with-text:hover {
+  box-shadow: 0 1px 25px 0 rgba(230, 12, 12, 0.1) inset, 0 1px 25px 0 rgba(255, 255, 255, 0.1),
+              0 1px 25px 0 rgba(255, 255, 255, 0.1) inset, 0 1px 25px 0 rgba(255, 255, 255, 0.1);  
 }
 
 button.with-text svg {
