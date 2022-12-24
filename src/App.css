@@ -33,10 +33,19 @@ button.with-icon {
   transition: 1s;
 }
 
+button.with-icon:active {
+  color: rgba(255, 255, 255, 0.8);
+  box-shadow: none;
+}
+
 button.with-icon:hover {
   color: rgba(255, 255, 255, 0.8);
   box-shadow: 0 1px 25px 0 rgba(255, 255, 255, 0.8) inset, 0 1px 25px 0 rgba(255, 255, 255, 0.8),
     0 1px 25px 0 rgba(255, 255, 255, 0.8) inset, 0 1px 25px 0 rgba(255, 255, 255, 0.8);
+}
+
+button.with-icon:focus {
+  box-shadow: none;
 }
 
 button.with-text {
