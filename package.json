@@ -1,7 +1,7 @@
 {
-  "name": "pomodoro-timer",
+  "name": "focus-timer",
   "version": "0.1.2",
-  "homepage": "https://gitterence.github.io/pomodoro-timer",
+  "homepage": "https://gitterence.github.io/focus-timer",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
