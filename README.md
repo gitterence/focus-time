@@ -1,8 +1,8 @@
-# Focus-Timer
+# Focus-Time
 
 A timer that helps you to focus on task using pomodoro method
 
-[Timer Demo](https://gitterence.github.io/pomodoro-timer/)
+[Timer Demo](https://gitterence.github.io/focus-time/)
 
 ![Screenshot](/src/media/images/timer_screenshot.png)
 
@@ -18,6 +18,6 @@ Run `npm run format` to format code with prettier
 
 Run `npm run deploy` to deploy the application
 
-# Reference 
+# Reference
 
 (code along project credit goes to dejwid: https://github.com/dejwid/react-pomodoro-timer)

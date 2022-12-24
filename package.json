@@ -1,7 +1,7 @@
 {
   "name": "focus-timer",
   "version": "0.1.2",
-  "homepage": "https://gitterence.github.io/focus-timer",
+  "homepage": "https://gitterence.github.io/focus-time",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
