@@ -38,7 +38,7 @@ button.with-icon:hover {
   box-shadow: 0 1px 25px 0 rgba(255, 255, 255, 0.8) inset, 0 1px 25px 0 rgba(255, 255, 255, 0.8),
     0 1px 25px 0 rgba(255, 255, 255, 0.8) inset, 0 1px 25px 0 rgba(255, 255, 255, 0.8);
 }
-@media (hover: none) {
+@media (hover: none) and (pointer: coarse){
   button.with-icon:hover {
     box-shadow: none;
   }
