@@ -79,6 +79,7 @@ function Timer() {
       <div style={{ marginTop: '20px' }}>
         {isPaused ? (
           <PlayButton
+          isActive={isPaused}
             onClick={() => {
               setIsPaused(false);
               isPausedRef.current = false;
@@ -86,9 +87,10 @@ function Timer() {
           />
         ) : (
           <PauseButton
+          isActive={!isPaused}
             onClick={() => {
               setIsPaused(true);
-              isPausedRef.current = true;
+              isPausedRef.current = true; 
             }}
           />
         )}
