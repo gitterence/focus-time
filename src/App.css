@@ -24,23 +24,72 @@ button {
   cursor: pointer;
 }
 
+/* Base button styles */
 button.with-icon {
   background-color: transparent;
   color: rgba(255, 255, 255, 0.8);
   border-radius: 50%;
   width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
-  transition: 1s;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  margin: 0 auto;
+  position: relative;
+  /* Needed for pseudo-elements */
+}
+
+button.with-icon svg {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  z-index: 2;
+}
+
+/* Ripple Out Effect */
+button.with-icon::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  opacity: 0;
+  transform: scale(1);
+  transition: all 0.5s ease-out;
+}
+
+button.with-icon:hover::before {
+  transform: scale(1.2);
+  opacity: 0;
+  animation: ripple 1s ease-out infinite;
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: scale(1.35);
+    opacity: 0;
+  }
 }
 
 button.with-icon:hover {
-  color: rgba(255, 255, 255, 0.8);
-  box-shadow: 0 1px 25px 0 rgba(255, 255, 255, 0.8) inset, 0 1px 25px 0 rgba(255, 255, 255, 0.8),
-    0 1px 25px 0 rgba(255, 255, 255, 0.8) inset, 0 1px 25px 0 rgba(255, 255, 255, 0.8);
+  color: #fff;
 }
-@media (hover: none) and (pointer: coarse){
+
+@media (hover: none) and (pointer: coarse) {
   button.with-icon:hover {
     box-shadow: none;
+    transform: none;
+    animation: none;
   }
 }
 
@@ -51,12 +100,15 @@ button.with-text {
   padding: 10px 20px;
   font-size: 1.4rem;
   line-height: 36px;
-  transition: 1s;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid transparent;
 }
 
 button.with-text:hover {
-  box-shadow: 0 1px 25px 0 rgba(230, 12, 12, 0.1) inset, 0 1px 25px 0 rgba(255, 255, 255, 0.1),
-    0 1px 25px 0 rgba(255, 255, 255, 0.1) inset, 0 1px 25px 0 rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 button.with-text svg {

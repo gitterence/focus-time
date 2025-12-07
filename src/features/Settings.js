@@ -1,8 +1,8 @@
 import { useContext } from 'react';
 import '../styles/slider.css';
 import ReactSlider from 'react-slider';
-import BackButton from '../component/BackButton';
-import SettingsContext from '../component/SettingsContext';
+import BackButton from '../components/BackButton';
+import SettingsContext from '../context/SettingsContext';
 
 function Settings() {
   const settingInfo = useContext(SettingsContext);
