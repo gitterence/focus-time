@@ -1,6 +1,6 @@
-function PlayButton(props) {
+function PlayButton({ className, ...props }) {
   return (
-    <button {...props} className="with-icon">
+    <button {...props} className={`with-icon ${className || ''}`}>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
         <path
           fillRule="evenodd"

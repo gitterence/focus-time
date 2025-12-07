@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './App.css';
 import Timer from './features/Timer';
 import Settings from './features/Settings';
-import SettingsContext from './component/SettingsContext';
+import SettingsContext from './context/SettingsContext';
 
 function App() {
   const [showSettings, setShowSettings] = useState(false);

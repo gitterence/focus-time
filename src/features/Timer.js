@@ -1,10 +1,10 @@
 import { useContext, useState, useEffect, useRef } from 'react';
 import { COLORS } from '../utils/COLORS';
 import 'react-circular-progressbar/dist/styles.css';
-import PauseButton from '../component/PauseButton';
-import PlayButton from '../component/PlayButton';
-import SettingButton from '../component/SettingButton';
-import SettingsContext from '../component/SettingsContext';
+import PauseButton from '../components/PauseButton';
+import PlayButton from '../components/PlayButton';
+import SettingButton from '../components/SettingButton';
+import SettingsContext from '../context/SettingsContext';
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import useSound from 'use-sound';
 import dingSfx from '../media/sound/ding-sound.mp3';
@@ -14,7 +14,7 @@ function Timer() {
   const [mode, setMode] = useState('work');
   const [isPaused, setIsPaused] = useState(true);
   const [secondsLeft, setSecondsLeft] = useState(0);
-  const [play, { stop }] = useSound(dingSfx);
+  const [play] = useSound(dingSfx);
 
   const modeRef = useRef(mode);
   const isPausedRef = useRef(isPaused);
