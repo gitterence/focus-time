@@ -63,10 +63,14 @@ button.with-icon::before {
   transition: all 0.5s ease-out;
 }
 
-button.with-icon:hover::before {
-  transform: scale(1.2);
-  opacity: 0;
-  animation: ripple 1s ease-out infinite;
+@media (hover: hover) {
+  button.with-icon:hover::before {
+    transform: scale(1.12);
+    /* Reduced from 1.2 */
+    opacity: 0;
+    animation: ripple 2s ease-out infinite;
+    /* Slowed from 1s to 2s */
+  }
 }
 
 @keyframes ripple {
@@ -76,20 +80,15 @@ button.with-icon:hover::before {
   }
 
   100% {
-    transform: scale(1.35);
+    transform: scale(1.25);
+    /* Reduced from 1.35 */
     opacity: 0;
   }
 }
 
-button.with-icon:hover {
-  color: #fff;
-}
-
-@media (hover: none) and (pointer: coarse) {
+@media (hover: hover) {
   button.with-icon:hover {
-    box-shadow: none;
-    transform: none;
-    animation: none;
+    color: #fff;
   }
 }
 
